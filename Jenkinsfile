@@ -34,7 +34,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 echo '🔍 Running SonarQube static analysis (JavaScript)...'
-                withCredentials([string(credentialsId: 'sonar-token', variable: 'SONAR_TOKEN')]) {
+                withCredentials([string(credentialsId: 'sonar', variable: 'sonar')]) {
                     sh '''
                         npm install -g sonarqube-scanner
                         sonar-scanner \
