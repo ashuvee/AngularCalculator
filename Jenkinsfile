@@ -6,8 +6,8 @@ pipeline {
 
     environment {
         // App
-        APP_NAME        = 'ai-technov-angularcalculator'
-        GIT_REPO        = 'https://github.com/ashuvee/ai-technov-angularcalculator.git'
+        APP_NAME        = 'AngularCalculator'
+        GIT_REPO        = 'https://github.com/ashuvee/AngularCalculator'
         NGINX_SERVER    = '18.116.203.32'
 
         // Tools
