@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo '📦 Cloning Angular app from GitHub...'
                 checkout([$class: 'GitSCM',
-                    branches: [[name: '*/main']],
+                    branches: [[name: '*/master']],
                     userRemoteConfigs: [[url: "${GIT_REPO}"]]
                 ])
             }
