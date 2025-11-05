@@ -53,6 +53,7 @@ pipeline {
         stage('Build Artifact') {
             steps {
                 echo '⚙️ Building Angular app...'
+                sh 'export NODE_OPTIONS=--openssl-legacy-provider'
                 sh 'npm ci'
                 sh 'npm run build -- --configuration=production'
                 sh '''
